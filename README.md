@@ -16,11 +16,17 @@ GRUPO: VSI
   **Tecnologías Usadas**
   
 *Angular:* Framework para desarrollo de aplicaciones SPA (Single Page Application).
+
 *Angular Material:*	Biblioteca de componentes UI con diseño Material Design.
+
 *TypeScript:*	Lenguaje principal del proyecto (superset de JavaScript).
+
 *RxJS:*	Programación reactiva utilizada para trabajar con HttpClient y eventos.
+
 *MockAPI / DummyJSON:*	APIs simuladas usadas para validar inicio de sesión y mostrar productos.
+
 *HTML & CSS:*	Estructura y estilos personalizados de componentes.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Explicación del Código (Flujo de la App y Métodos Principales)**
@@ -28,11 +34,14 @@ GRUPO: VSI
 *1. Inicio de sesión (IniciarSesion)*
 
   *Componentes Material usados:* MatInput, MatCard, MatButton, MatSnackBar.
+  
   *Formulario reactivo:* (FormBuilder) para capturar email y password.
+  
   *Método onSubmit():*
       1. Valida campos requeridos.
       2. Llama a una API (mockapi.io) para obtener la lista de usuarios.
       3. Verifica si el usuario existe y si la contraseña es correcta.
+      
   *Si todo es válido:*
       1. Guarda usuario en localStorage.
       2. Muestra mensaje de éxito.
