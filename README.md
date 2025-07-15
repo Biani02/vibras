@@ -124,37 +124,8 @@ Este componente permite modificar los datos de un producto existente.
 | **MockAPI**   | [https://68743fcedd06792b9c937143.mockapi.io/api/users](https://68743fcedd06792b9c937143.mockapi.io/api/users) | Simula una base de datos REST para validar credenciales sin backend real.                                      |
 | **DummyJSON** | [https://dummyjson.com/products](https://dummyjson.com/products)                                               | Ofrece un endpoint público para obtener productos de prueba fácilmente, ideal para simulaciones de e-commerce. |
 
----
-
-## Flujo general de la app
-
-1. **Usuario ingresa correo y contraseña.**
-2. Se consulta la API para validar los datos.
-3. Si son correctos, se redirige al catálogo de productos.
-4. Desde la página de bienvenida, el usuario puede:
-
-   * Buscar productos.
-   * Ver más detalles.
-   * Agregar, editar o eliminar productos.
-   * Ver un mensaje personalizado de bienvenida.
-   * Cerrar sesión.
 
 ---
-
-## Flujo General (Resumen Integrado)
-
-```plaintext
-[Iniciar Sesión]
-      ↓
-[Pagina Bienvenido]
-  ├── Ver productos
-  ├── Agregar producto → [Modal: AgregarProducto]
-  ├── Editar producto → [Modal: EditarProducto]
-  ├── Ver detalles → [Modal: MensajesProductos]
-  ├── Ir a perfil → [PerfilUsuario]
-  └── Cerrar sesión
-```
-
 
 <img width="2874" height="1576" alt="image" src="https://github.com/user-attachments/assets/ca3b28ae-a56b-4522-8fab-d4c5c1132c2b" />
 
