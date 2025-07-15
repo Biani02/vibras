@@ -1,59 +1,51 @@
 # Login
+INSTUTUTO TECNOLOGICO DE OAXACA
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+INGENIERIA EN SISTEMAS COMPUTACIONALES
 
-## Development server
+MATERIA: PROGRAMACION WEB
 
-To start a local development server, run:
+DOCENTE: MARTINEZ NIETO ADELINA
 
-```bash
-ng serve
-```
+ALUMNAS: RAMOS JIMENEZ XOCHITL ITAHY, VARELA VERA BIANI BISALUA 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+GRUPO: VSI
 
-## Code scaffolding
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<img width="2874" height="1576" alt="image" src="https://github.com/user-attachments/assets/ca3b28ae-a56b-4522-8fab-d4c5c1132c2b" />
 
-```bash
-ng generate component component-name
-```
+<img width="2866" height="1556" alt="image" src="https://github.com/user-attachments/assets/230db28d-768a-4e73-ad12-4eef02393798" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+<img width="2879" height="1583" alt="image" src="https://github.com/user-attachments/assets/cc73b736-b4e2-490a-84eb-0df9dddf6528" />
 
-```bash
-ng generate --help
-```
+<img width="1070" height="1368" alt="image" src="https://github.com/user-attachments/assets/8b8e5c4f-6ac1-45b7-9906-b6d6cd822770" />
 
-## Building
+<img width="1051" height="1394" alt="image" src="https://github.com/user-attachments/assets/6fd962d9-26ac-4107-b439-5e4fdef791bb" />
 
-To build the project run:
+<img width="1051" height="1377" alt="image" src="https://github.com/user-attachments/assets/b7162cd2-2b48-465e-85fd-ef8a28ecd728" />
 
-```bash
-ng build
-```
+<img width="2761" height="553" alt="image" src="https://github.com/user-attachments/assets/95ff0a4b-f754-4d3f-81f0-7641b15ec224" />
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+<img width="1039" height="1344" alt="image" src="https://github.com/user-attachments/assets/9576b18c-fbfa-4243-9e47-faee0e23556f" />
 
-## Running unit tests
+<img width="930" height="391" alt="image" src="https://github.com/user-attachments/assets/4a0842b7-913b-4da5-b63f-a1340f592a52" />
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+<img width="774" height="126" alt="image" src="https://github.com/user-attachments/assets/4c478e0b-2ba6-49e1-b047-018529014711" />
 
-```bash
-ng test
-```
+<img width="2775" height="1274" alt="image" src="https://github.com/user-attachments/assets/05dc2bdb-b12e-4ba0-a785-3b5a3ecc0813" />
 
-## Running end-to-end tests
+<img width="1099" height="1359" alt="image" src="https://github.com/user-attachments/assets/fcaf430a-71c2-4d60-ac67-0997abba29b7" />
 
-For end-to-end (e2e) testing, run:
+<img width="2760" height="583" alt="image" src="https://github.com/user-attachments/assets/6c082220-14b5-4651-bb28-f430bd477c44" />
 
-```bash
-ng e2e
-```
+<img width="1034" height="1304" alt="image" src="https://github.com/user-attachments/assets/012b956b-8ec6-45d5-8b56-4bc04320582a" />
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+
+
+
