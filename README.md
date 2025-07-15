@@ -2,7 +2,7 @@
 
 # Instituto Tecnológico de Oaxaca
 
-## 🖥Ingeniería en Sistemas Computacionales
+## Ingeniería en Sistemas Computacionales
 
 ### Materia: Programación Web
 
