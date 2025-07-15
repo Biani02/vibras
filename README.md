@@ -13,60 +13,81 @@ GRUPO: VSI
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  **Tecnologías Usadas**
-  
-*Angular:* Framework para desarrollo de aplicaciones SPA (Single Page Application).
+Con base en el código que proporcionaste, a continuación te doy un **resumen explicativo estructurado** para documentar tu proyecto Angular:
 
-*Angular Material:*	Biblioteca de componentes UI con diseño Material Design.
+---
 
-*TypeScript:*	Lenguaje principal del proyecto (superset de JavaScript).
+## 🧰 Tecnologías Usadas
 
-*RxJS:*	Programación reactiva utilizada para trabajar con HttpClient y eventos.
+| Tecnología              | Descripción                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+| **Angular**             | Framework para desarrollo de aplicaciones SPA (Single Page Application).  |
+| **Angular Material**    | Biblioteca de componentes UI con diseño Material Design.                  |
+| **TypeScript**          | Lenguaje principal del proyecto (superset de JavaScript).                 |
+| **RxJS**                | Programación reactiva utilizada para trabajar con `HttpClient` y eventos. |
+| **MockAPI / DummyJSON** | APIs simuladas usadas para validar inicio de sesión y mostrar productos.  |
+| **HTML & CSS**          | Estructura y estilos personalizados de componentes.                       |
 
-*MockAPI / DummyJSON:*	APIs simuladas usadas para validar inicio de sesión y mostrar productos.
+---
 
-*HTML & CSS:*	Estructura y estilos personalizados de componentes.
+## 🔁 Explicación del Código (Flujo de la App y Métodos Principales)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 1. **Inicio de sesión (`IniciarSesion`)**
 
-**Explicación del Código (Flujo de la App y Métodos Principales)**
+* **Componentes Material usados**: `MatInput`, `MatCard`, `MatButton`, `MatSnackBar`.
+* **Formulario reactivo** (`FormBuilder`) para capturar `email` y `password`.
+* **Método `onSubmit()`**:
 
-*1. Inicio de sesión (IniciarSesion)*
+  * Valida campos requeridos.
+  * Llama a una API (`mockapi.io`) para obtener la lista de usuarios.
+  * Verifica si el usuario existe y si la contraseña es correcta.
+  * Si todo es válido:
 
-  *Componentes Material usados:* MatInput, MatCard, MatButton, MatSnackBar.
-  
-  *Formulario reactivo:* (FormBuilder) para capturar email y password.
-  
-  *Método onSubmit():*
-      1. Valida campos requeridos.
-      2. Llama a una API (mockapi.io) para obtener la lista de usuarios.
-      3. Verifica si el usuario existe y si la contraseña es correcta.
-      
-  *Si todo es válido:*
-      1. Guarda usuario en localStorage.
-      2. Muestra mensaje de éxito.
-      3. Redirige a pagina-bienvenido.
+    * Guarda usuario en `localStorage`.
+    * Muestra mensaje de éxito.
+    * Redirige a `pagina-bienvenido`.
 
-2. Página de bienvenida (PaginaBienvenido)
-Carga datos del usuario desde localStorage y muestra su nombre e imagen.
+### 2. **Página de bienvenida (`PaginaBienvenido`)**
 
-Carga productos desde la API https://dummyjson.com/products (primeros 9).
+* **Carga datos del usuario** desde `localStorage` y muestra su nombre e imagen.
+* **Carga productos** desde la API `https://dummyjson.com/products` (primeros 9).
+* Permite:
 
-Permite:
+  * **Filtrar productos** por texto (`productosFiltrados`).
+  * **Agregar** un nuevo producto mediante un modal (`AgregarProducto`).
+  * **Editar** productos (`EditarProducto`).
+  * **Eliminar** productos con confirmación (`ConfirmDialog`).
+  * **Ver más detalles** de un producto (`MensajesProductos`).
+  * **Cerrar sesión**, lo que borra el localStorage y redirige al login.
+  * **Abrir modal con logo** (`LogoModal`).
 
-Filtrar productos por texto (productosFiltrados).
+---
 
-Agregar un nuevo producto mediante un modal (AgregarProducto).
+## 🔌 APIs Elegidas y Justificación
 
-Editar productos (EditarProducto).
+| API           | URL                                                                                                            | Justificación                                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **MockAPI**   | [https://68743fcedd06792b9c937143.mockapi.io/api/users](https://68743fcedd06792b9c937143.mockapi.io/api/users) | Simula una base de datos REST para validar credenciales sin backend real.                                      |
+| **DummyJSON** | [https://dummyjson.com/products](https://dummyjson.com/products)                                               | Ofrece un endpoint público para obtener productos de prueba fácilmente, ideal para simulaciones de e-commerce. |
 
-Eliminar productos con confirmación (ConfirmDialog).
+---
 
-Ver más detalles de un producto (MensajesProductos).
+## ✅ Resumen del flujo general de la app
 
-Cerrar sesión, lo que borra el localStorage y redirige al login.
+1. **Usuario ingresa correo y contraseña.**
+2. Se consulta la API para validar los datos.
+3. Si son correctos, se redirige al catálogo de productos.
+4. Desde la página de bienvenida, el usuario puede:
 
-Abrir modal con logo (LogoModal).
+   * Buscar productos.
+   * Ver más detalles.
+   * Agregar, editar o eliminar productos.
+   * Ver un mensaje personalizado de bienvenida.
+   * Cerrar sesión.
+
+---
+
+¿Te gustaría que te genere también una presentación visual (PDF o PowerPoint) con este contenido?
 
 
 <img width="2874" height="1576" alt="image" src="https://github.com/user-attachments/assets/ca3b28ae-a56b-4522-8fab-d4c5c1132c2b" />
