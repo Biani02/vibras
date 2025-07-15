@@ -63,7 +63,7 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-### **PerfilUsuario**
+### 3. **PerfilUsuario**
 
 Este componente permite al usuario ver y editar su información personal.
 
@@ -82,7 +82,7 @@ Este componente permite al usuario ver y editar su información personal.
 
 ---
 
-### **AgregarProducto**
+### 4. **AgregarProducto**
 
 Componente tipo modal para capturar información de un nuevo producto.
 
@@ -104,7 +104,7 @@ Componente tipo modal para capturar información de un nuevo producto.
 
 ---
 
-### **EditarProducto**
+### 5. **EditarProducto**
 
 Este componente permite modificar los datos de un producto existente.
 
