@@ -41,6 +41,7 @@ GRUPO: VSI
 
 <img width="1034" height="1304" alt="image" src="https://github.com/user-attachments/assets/012b956b-8ec6-45d5-8b56-4bc04320582a" />
 
+<img width="2879" height="1581" alt="image" src="https://github.com/user-attachments/assets/b91569b7-1e62-4732-9aaf-187452ec6dc2" />
 
 
 
