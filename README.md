@@ -12,8 +12,8 @@
 **Martínez Nieto Adelina**
 
 ### Alumnas:
-- **Ramos Jiménez Xochitl Itahy**
-- **Varela Vera Biani Bisalua**
+- **Ramos Jiménez Xochitl Itahy** (https://github.com/Itahy)
+- **Varela Vera Biani Bisalua** (https://github.com/Biani02)
 
 ### Grupo:
 **VSI**
