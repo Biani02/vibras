@@ -17,7 +17,7 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-## 🧰 Tecnologías Usadas
+## Tecnologías Usadas
 
 | Tecnología              | Descripción                                                               |
 | ----------------------- | ------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-## 🔁 Explicación del Código (Flujo de la App y Métodos Principales)
+## Explicación del Código (Flujo de la App y Métodos Principales)
 
 ### 1. **Inicio de sesión (`IniciarSesion`)**
 
@@ -63,7 +63,61 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-## 🔌 APIs Elegidas y Justificación
+### **PerfilUsuario**
+
+Este componente permite al usuario ver y editar su información personal.
+
+#### Funcionalidades principales:
+
+* Recupera datos del usuario desde `localStorage`.
+* Llena el formulario con nombre, email y contraseña.
+* Permite al usuario **actualizar su perfil** (simulado guardando nuevamente en `localStorage`).
+* Funcionalidad para mostrar/ocultar la contraseña.
+
+#### Métodos importantes:
+
+* `ngOnInit()`: Carga y muestra los datos del usuario.
+* `guardarCambios()`: Valida y actualiza los datos en el almacenamiento local.
+* `toggleMostrarPassword()`: Alterna la visibilidad del campo de contraseña.
+
+---
+
+### **AgregarProducto**
+
+Componente tipo modal para capturar información de un nuevo producto.
+
+#### Funcionalidades:
+
+* Permite ingresar todos los datos de un producto.
+* Al hacer clic en “Guardar”, se genera un ID y se cierra el modal enviando los datos al componente padre (`PaginaBienvenido`).
+* Si se hace clic en “Cancelar”, simplemente se cierra el modal sin cambios.
+
+#### Estructura del objeto `producto`:
+
+```ts
+{
+  thumbnail: '', title: '', description: '',
+  price: '', category: '', stock: '',
+  brand: '', discountPercentage: '', id: (autogenerado)
+}
+```
+
+---
+
+### **EditarProducto**
+
+Este componente permite modificar los datos de un producto existente.
+
+#### Flujo:
+
+* Al abrir el modal, se recibe el producto actual como parámetro (`MAT_DIALOG_DATA`) y se clona para editarlo sin afectar el original.
+* Permite editar sus propiedades básicas.
+* Al guardar, se envía el objeto editado al componente padre para reemplazar el original en la lista.
+* Si se cancela, se cierra el modal sin cambios.
+
+---
+
+## APIs Elegidas y Justificación
 
 | API           | URL                                                                                                            | Justificación                                                                                                  |
 | ------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -72,7 +126,7 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-## ✅ Resumen del flujo general de la app
+## Flujo general de la app
 
 1. **Usuario ingresa correo y contraseña.**
 2. Se consulta la API para validar los datos.
@@ -87,7 +141,19 @@ Con base en el código que proporcionaste, a continuación te doy un **resumen e
 
 ---
 
-¿Te gustaría que te genere también una presentación visual (PDF o PowerPoint) con este contenido?
+## Flujo General (Resumen Integrado)
+
+```plaintext
+[Iniciar Sesión]
+      ↓
+[Pagina Bienvenido]
+  ├── Ver productos
+  ├── Agregar producto → [Modal: AgregarProducto]
+  ├── Editar producto → [Modal: EditarProducto]
+  ├── Ver detalles → [Modal: MensajesProductos]
+  ├── Ir a perfil → [PerfilUsuario]
+  └── Cerrar sesión
+```
 
 
 <img width="2874" height="1576" alt="image" src="https://github.com/user-attachments/assets/ca3b28ae-a56b-4522-8fab-d4c5c1132c2b" />
