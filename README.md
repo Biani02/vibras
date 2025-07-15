@@ -1,15 +1,23 @@
 # Login
-INSTUTUTO TECNOLOGICO DE OAXACA
 
-INGENIERIA EN SISTEMAS COMPUTACIONALES
+# Instituto Tecnológico de Oaxaca
 
-MATERIA: PROGRAMACION WEB
+## 🖥Ingeniería en Sistemas Computacionales
 
-DOCENTE: MARTINEZ NIETO ADELINA
+### Materia: Programación Web
 
-ALUMNAS: RAMOS JIMENEZ XOCHITL ITAHY, VARELA VERA BIANI BISALUA 
+---
 
-GRUPO: VSI
+### Docente:
+**Martínez Nieto Adelina**
+
+### Alumnas:
+- **Ramos Jiménez Xochitl Itahy**
+- **Varela Vera Biani Bisalua**
+
+### Grupo:
+**VSI**
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
