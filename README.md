@@ -21,10 +21,6 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Con base en el código que proporcionaste, a continuación te doy un **resumen explicativo estructurado** para documentar tu proyecto Angular:
-
----
-
 ## Tecnologías Usadas
 
 | Tecnología              | Descripción                                                               |
