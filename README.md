@@ -13,6 +13,53 @@ GRUPO: VSI
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+  **Tecnologías Usadas**
+  
+*Angular:* Framework para desarrollo de aplicaciones SPA (Single Page Application).
+*Angular Material:*	Biblioteca de componentes UI con diseño Material Design.
+*TypeScript:*	Lenguaje principal del proyecto (superset de JavaScript).
+*RxJS:*	Programación reactiva utilizada para trabajar con HttpClient y eventos.
+*MockAPI / DummyJSON:*	APIs simuladas usadas para validar inicio de sesión y mostrar productos.
+*HTML & CSS:*	Estructura y estilos personalizados de componentes.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Explicación del Código (Flujo de la App y Métodos Principales)**
+
+*1. Inicio de sesión (IniciarSesion)*
+
+  *Componentes Material usados:* MatInput, MatCard, MatButton, MatSnackBar.
+  *Formulario reactivo:* (FormBuilder) para capturar email y password.
+  *Método onSubmit():*
+      1. Valida campos requeridos.
+      2. Llama a una API (mockapi.io) para obtener la lista de usuarios.
+      3. Verifica si el usuario existe y si la contraseña es correcta.
+  *Si todo es válido:*
+      1. Guarda usuario en localStorage.
+      2. Muestra mensaje de éxito.
+      3. Redirige a pagina-bienvenido.
+
+2. Página de bienvenida (PaginaBienvenido)
+Carga datos del usuario desde localStorage y muestra su nombre e imagen.
+
+Carga productos desde la API https://dummyjson.com/products (primeros 9).
+
+Permite:
+
+Filtrar productos por texto (productosFiltrados).
+
+Agregar un nuevo producto mediante un modal (AgregarProducto).
+
+Editar productos (EditarProducto).
+
+Eliminar productos con confirmación (ConfirmDialog).
+
+Ver más detalles de un producto (MensajesProductos).
+
+Cerrar sesión, lo que borra el localStorage y redirige al login.
+
+Abrir modal con logo (LogoModal).
+
+
 <img width="2874" height="1576" alt="image" src="https://github.com/user-attachments/assets/ca3b28ae-a56b-4522-8fab-d4c5c1132c2b" />
 
 <img width="2866" height="1556" alt="image" src="https://github.com/user-attachments/assets/230db28d-768a-4e73-ad12-4eef02393798" />
